@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Learning"
+        tools:targetApi="31">
+        <activity
+            android:name=".ETP"
+            android:exported="false" />
+        <activity
+            android:name=".cardview.CardviewMain"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentswipe.MainFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentswipe.FirstFragment"
+            android:exported="false" />
+        <activity
+            android:name=".externalfilestorage.ExternalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".externalfilestorage.ExternalFileStorageDemo"
+            android:exported="false" />
+        <activity
+            android:name=".filestorage.FileStorageDemo"
+            android:exported="false" />
+        <activity
+            android:name=".customviews.CustomViews"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpreferences.SharedPreferencesDemo"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentMain"
+            android:exported="false" />
+        <activity
+            android:name=".drawerAndFragment.LearningFragment"
+            android:exported="false" />
+        <activity
+            android:name=".misc.DateTimePicker"
+            android:exported="false" />
+        <activity
+            android:name=".notification.NotifyMain"
+            android:exported="false" />
+        <activity
+            android:name=".notification.Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".misc.AlarmBroadcastManager"
+            android:exported="false" />
+        <activity
+            android:name=".cardview.CardViewMain"
+            android:exported="false" />
+        <activity
+            android:name=".misc.Custom_Toast"
+            android:exported="false" />
+        <activity
+            android:name=".misc.Progress_bar"
+            android:exported="false" />
+        <activity
+            android:name=".misc.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Learning">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".misc.RatingsActivity"
+            android:exported="false" />
+
+        <receiver android:name=".misc.AlarmManagerBroadcast" />
+    </application>
+
+</manifest>

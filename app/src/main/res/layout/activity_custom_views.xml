@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customviews.CustomViews">
+
+    <com.example.learning.customviews.CustomViewDrawing
+        android:id="@+id/cd"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"></com.example.learning.customviews.CustomViewDrawing>
+
+    <Button
+        android:id="@+id/cvbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="160dp"/>
+
+</LinearLayout>
