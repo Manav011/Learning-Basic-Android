@@ -39,14 +39,6 @@ class FirstFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_first, container, false)
-        val viewPager = requireActivity().findViewById<ViewPager2>(R.id.viewPager)
-        val adapter = viewPager.adapter as ViewPagerAdapter
-        val li = listOf("abc", "bcd")
-        view.findViewById<Button>(R.id.fsend).setOnClickListener{
-
-            adapter.setData(li)
-
-        }
         return view
     }
 

@@ -37,7 +37,6 @@ class SecondFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_second, container, false)
-        view.findViewById<TextView>(R.id.ftv2).text =  arguments?.getString("data")
 
         return view
     }
